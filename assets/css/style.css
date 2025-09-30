@@ -74,3 +74,26 @@ header nav {
 .nav-container .nav-links li a:hover {
     color: var(--secondary-text);
 }
+
+/* Footer */
+
+.footer-container {
+    background-color: var(--primary-text);
+    color:var(--card-bg);
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-links a {
+  color: var(--background);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}

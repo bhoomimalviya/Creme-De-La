@@ -3,3 +3,5 @@
 <?php
 echo "Hello Bhoomi!";
 ?>
+
+<?php include "includes/footer.php" ?>
