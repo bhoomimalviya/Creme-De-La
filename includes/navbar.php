@@ -9,9 +9,6 @@ if(session_status() == PHP_SESSION_NONE) {
     <nav>
       <div class="nav-container">
         <div class="logo">CremeDeLa</div>
-        <div class="hamburger">
-          <i class="fas fa-bars"></i>
-        </div>
         <ul class="nav-links">
           <li><a href="/CremeDeLa/index.php">Home</a></li>
           <li><a href="/CremeDeLa/customer/menu/menu.php">Menu</a></li>

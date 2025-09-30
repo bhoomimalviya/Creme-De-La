@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+ :root {
+    --accent: #73aece;
+    --background: #e5e7eb;
+    --primary-text: #1e3a5f;
+    --hover: #a9d6e5;
+    --secondary-text: #2f2f2f;
+    --border: #9ca3af;
+    --card-bg: #FFFDF9;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--secondary-text);
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+/* Navbar */
+
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--accent);
+    padding: 2rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--background);
+}
+
+.nav-container .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-container .nav-links li a {
+    text-decoration: none;
+    color: var(--background);
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-container .nav-links li a:hover {
+    color: var(--secondary-text);
+}
