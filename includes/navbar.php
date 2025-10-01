@@ -10,7 +10,7 @@ if(session_status() == PHP_SESSION_NONE) {
       <div class="nav-container">
         <div class="logo">CremeDeLa</div>
         <ul class="nav-links">
-          <li><a href="/CremeDeLa/index.php">Home</a></li>
+          <li><a href="/index.php">Home</a></li>
           <li><a href="/CremeDeLa/customer/menu/menu.php">Menu</a></li>
           <li><a href="/CremeDeLa/about.php">About Us</a></li>
 
