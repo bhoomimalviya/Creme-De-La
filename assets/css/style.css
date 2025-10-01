@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
- :root {
+:root {
     --accent: #73aece;
     --background: #e5e7eb;
     --primary-text: #1e3a5f;
@@ -15,22 +15,27 @@
     --card-bg: #FFFDF9;
 }
 
+/* Make page take full height */
 html,
 body {
   height: 100%;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
     background-color: var(--background);
     color: var(--secondary-text);
-    display: flex;
-    flex-direction: column;
-    padding-top: 100px;
+    padding-top: 100px; /* space for fixed navbar */
+}
+
+/* Make main content grow */
+main {
+  flex: 1;
 }
 
 /* Navbar */
-
 header nav {
     position: fixed;
     top: 0;
@@ -77,23 +82,49 @@ header nav {
 
 /* Footer */
 
+footer {
+  background: var(--primary-text);
+  color: var(--background);     
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-top: auto;   
+}
+
 .footer-container {
-    background-color: var(--primary-text);
-    color:var(--card-bg);
-    text-align: center;
-    padding: 20px;
-    margin-top: 100px;
-    position: relative;
-    width: 100%;
-    bottom: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.footer-info p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.footer-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 .footer-links a {
-  color: var(--background);
-  text-decoration: none;
-  margin: 0 10px;
+    color: var(--background);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s;
 }
 
-.footer-links a:hover {
-  text-decoration: underline;
+footer::after {
+  content: "© 2025 Creme De La. All rights reserved.";
+  display: block;
+  margin-top: 25px;
+  font-size: 0.85rem;
+  color: #aaa;
 }
