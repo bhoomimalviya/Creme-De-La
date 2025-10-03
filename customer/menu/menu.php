@@ -26,7 +26,7 @@ if(!isset($_SESSION['user_id'])){
             <h3>Donut</h3>
         </a>
 
-        <a href="colddrink.php" class="category-card">
+        <a href="colddrinks.php" class="category-card">
             <img src="/Creme-De-La/assets/images/menu-categories/drinks-category.jpeg" alt="Cold Drinks">
             <h3>Cold Drinks</h3>
         </a>
