@@ -27,7 +27,7 @@ body {
 body {
     background-color: var(--background);
     color: var(--secondary-text);
-    padding-top: 150px; /* space for fixed navbar */
+    padding-top: 100px; /* space for fixed navbar */
 }
 
 /* Make main content grow */
@@ -226,10 +226,10 @@ header nav {
 }
 
 .item-card {
-    background-color: white;
+    background-color: var(--card-bg);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     transition: transform 0.2s;
 }
@@ -267,6 +267,7 @@ header nav {
 }
 
 .item-card:hover {
+    border: 3px solid var(--accent);
     transform: translateY(-5px);
 }
 
